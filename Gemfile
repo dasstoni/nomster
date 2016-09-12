@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 #Gem for a simple form
 gem 'simple_form'
+#Devise gem for user authenitcation
+gem 'devise', '>= 3.2.4'
 #Kaminari gem for pagination
 gem 'kaminari', '~> 0.17.0'
 
