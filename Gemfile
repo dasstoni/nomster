@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+#Gem for a simple form
+gem 'simple_form'
+#Kaminari gem for pagination
+gem 'kaminari', '~> 0.17.0'
+
 gem 'bootstrap-sass', '~> 3.3.5.1'
 
 gem 'sprockets', '2.11.0'
