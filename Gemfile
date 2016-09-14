@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#Converting address to longitude and latitude
+gem 'geocoder', '1.3.4'
 #Gem for a simple form
 gem 'simple_form'
 #Devise gem for user authenitcation
