@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'figaro', '>= 1.0.0'
 #Converting address to longitude and latitude
 gem 'geocoder', '1.3.4'
 #Gem for a simple form
