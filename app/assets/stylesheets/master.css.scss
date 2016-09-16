@@ -73,7 +73,8 @@ blockquote p {
 }
 
 .image-responsive{
-  float:left;
+  float:inherit;
   padding: 5px;
   text-align: center;
+  margin: auto;
 }
