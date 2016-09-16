@@ -3,8 +3,12 @@ class PhotoController < ApplicationController
 
   def create
     @place = Place.find(params[:place_id])
-    @place.photos.create(photo_params.merge(user: current_user))
-    redirect_to place_path(@place)
+    if @place.user != current_user
+      return render text: 'Not Allowed', status: :forbidden
+    else
+      @place.photos.create(photo_params.merge(user: current_user))
+      redirect_to place_path(@place)
+    end
   end
 
   private
