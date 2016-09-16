@@ -103,16 +103,17 @@
 
 <% @place.photos.each do |photo| %>
     <% if photo.present? %>
-    <div class = "booyah-box col-xs-10 col-xs-offset-1">
+
     <div class="image-responsive">
+      <div class = "booyah-box col-xs-10 col-xs-offset-1">
       <%= image_tag photo.picture %>
       <br />
       <%= photo.caption %>
-    </div>
+    </div>  </div>
     <% end %>
 
 <% end %>
-  </div>
+
 
 </div>
 
