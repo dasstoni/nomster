@@ -98,35 +98,34 @@
 
 
 
+<% unless @place.photos.empty? %>
+  <div class = "booyah-box col-xs-10 col-xs-offset-1">
 
-
-
-<% @place.photos.each do |photo| %>
-    <% if photo.present? %>
-
-    <div class="image-responsive">
-      <div class = "booyah-box col-xs-10 col-xs-offset-1">
-      <%= image_tag photo.picture %>
-      <br />
-      <%= photo.caption %>
-    </div>  </div>
+    <% @place.photos.each do |photo| %>
+      <% if photo.present? %>
+        <div class="image-responsive">
+          <%= image_tag photo.picture %>
+          <br />
+          <%= photo.caption %>
+        </div>
+      <% end %>
     <% end %>
-
+  </div>
 <% end %>
 
 
-</div>
 
     <div class="clear"></div>
-<br />
-<br />
+
+<br /><br />
+
 
 <div class="col-xs-10 col-xs-offset-1">
-<h1 class="pull-left"> Comments </h1>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
-  Add a Comment
-</button>
+  <h1 class="pull-left"> Comments </h1>
+    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
+          Add a Comment
+      </button>
 </div>
 
 
