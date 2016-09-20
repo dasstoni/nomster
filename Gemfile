@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 #CarrierWave for uploading files on Rails Application
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem 'fog'
 
 gem 'figaro', '>= 1.0.0'
 #Converting address to longitude and latitude
